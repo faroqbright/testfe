@@ -27,7 +27,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-white flex items-center">
               <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-                YourBrand
+                Test Task
               </span>
             </Link>
           </div>

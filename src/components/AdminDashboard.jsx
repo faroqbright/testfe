@@ -48,7 +48,7 @@ const AdminDashboard = () => {
   const fetchMessages = async () => {
     setIsLoading(true);
     try {
-      const res = await axios.get("http://localhost:5000/api/contact/");
+      const res = await axios.get("https://testbe-production-59e0.up.railway.app/api/contact/");
       setMessages(res.data);
     } catch (err) {
       console.error("Error fetching messages", err);
@@ -59,7 +59,7 @@ const AdminDashboard = () => {
 
   const toggleReadStatus = async (id) => {
     try {
-      await axios.patch(`http://localhost:5000/api/contact/${id}`);
+      await axios.patch(`https://testbe-production-59e0.up.railway.app/api/contact/${id}`);
       fetchMessages();
       setIsModalOpen(false);
     } catch (err) {
@@ -69,7 +69,7 @@ const AdminDashboard = () => {
 
   const deleteMessage = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/contact/${id}`);
+      await axios.delete(`https://testbe-production-59e0.up.railway.app/api/contact/${id}`);
       fetchMessages();
       if (selectedMessage?._id === id) {
         setIsModalOpen(false);

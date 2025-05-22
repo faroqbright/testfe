@@ -35,7 +35,7 @@ const DashboardContactForm = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/api/contact/",
+        "https://testbe-production-59e0.up.railway.app/api/contact/",
         payload
       );
       toast.success(response.data.message || "Message sent!");
