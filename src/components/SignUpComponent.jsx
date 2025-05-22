@@ -218,7 +218,7 @@ const SignUp = () => {
             <div className="text-center text-sm text-gray-600">
               Already have an account?{' '}
               <button 
-                onClick={() => navigate('/login')}
+                onClick={() => navigate('/')}
                 className="font-medium text-purple-600 hover:text-purple-700 focus:outline-none focus:underline transition-colors"
               >
                 Log in instead
