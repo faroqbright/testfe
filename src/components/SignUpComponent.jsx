@@ -53,7 +53,7 @@ const SignUp = () => {
           navigate('/');
         }, 2000);
       } else {
-        toast.error(data.message || 'Registration failed');
+        toast.error(data.mwssage || 'Registration failed');
       }
     } catch (error) {
       toast.error('Network error. Please try again.');
